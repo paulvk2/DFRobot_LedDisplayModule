@@ -96,6 +96,10 @@ public:
    */  
   void displayOff();
 
+//  set a new address for another display to use more than one on he buss
+
+  void setAdress(uint8_t newAdress);
+
   /**
    * @fn flashTwos
    * @brief Flash mode of the 8 bits digital tube, flash at 0.5Hz
