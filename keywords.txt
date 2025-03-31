@@ -21,3 +21,4 @@ stopFlash	KEYWORD2
 setBrightness	KEYWORD2
 setDisplayArea	KEYWORD2
 print	KEYWORD2
+setAdress	KEYWORD2
