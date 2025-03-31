@@ -54,6 +54,22 @@ int DFRobot_LedDisplayModule::begin8()
   setBrightness8(15);
   return 0;
 }
+
+ //  set a new address for another 8 digit display to use more than one on he buss
+
+void DFRobot_LedDisplayModule::setAdress(uint8_t newAdress)
+
+
+{
+  
+  _ledAddress = newAdress >> 1;
+
+i2cWriteCmd(CMD_HT16K33_OSCON);
+  displayOn();
+  setBrightness8(15);
+
+}
+
    
 void DFRobot_LedDisplayModule::displayOn()
 {
