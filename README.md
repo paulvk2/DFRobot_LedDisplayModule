@@ -1,5 +1,11 @@
 # DFRobot_LedDisplayModule
 
+I needed more than one module but found no command to change the address to use another one
+so after a lot of head scratching (I am not a C programmer nor is it my trade)
+I worked out how to add the function to the library to use more than one 8 digit module
+It is  LED.setAdress(xxx) insert module address
+You use this before sending to the module
+
 * [中文版](./README_CN.md)
   
 This is a 4bits / 8bits digital tube. It communicates with the host via IIC to show numbers from 0 to 9, capital letters A, B, C, D, E, F, H, L, O, P, U and dash-. <br>
